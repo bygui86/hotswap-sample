@@ -1,0 +1,47 @@
+
+---[ HotSwap - Sample - Instructions ]---
+
+
+PLEASE NOTE: Spring Boot DevTools is not really performing hot-swapping, just restarting the entire application once a new compile ends
+
+
+---[ SpringLoaded [NOT-WORKING]
+
+	. open a terminal
+
+	. run the example with java command
+		java -jar build/libs/hotswapsample-0.1.jar -javaagent:~/tools/springloaded-1.2.8/springloaded-1.2.8.RELEASE.jar -noverify
+	PLEASE NOTE: running the example through normal gradle command won't work, please use
+		./gradlew bootRun ?
+
+	. use postman to test endpoints and produce logs
+
+	. while testing with postman
+		.. uncomment some lines of code in the controller
+		.. open another terminal (different than in which the example in running)
+		.. without stopping the application, build the example
+		.. ?
+
+	. use postman to test the new endpoints and old endpoints with more log lines
+
+
+
+---[ DCEVM [NOT-WORKING]
+
+	. open a terminal
+
+	. run the example with java command
+		java -jar build/libs/hotswapsample-0.1.jar -XXaltjvm=dcevm -javaagent:/Users/mab/tools/dcevm-agent/hotswap-agent-1.2.0.jar
+	PLEASE NOTE: running the example through normal gradle command won't work, please use
+		./gradlew bootRun ?
+
+	. use postman to test endpoints and produce logs
+
+	. while testing with postman
+		.. uncomment some lines of code in the controller
+		.. open another terminal (different than in which the example in running)
+		.. without stopping the application, build the example
+		.. ?
+
+	. use postman to test the new endpoints and old endpoints with more log lines
+

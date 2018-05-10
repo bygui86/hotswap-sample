@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "5e5d0012-19e7-411b-b7b9-dda67ec4287e",
+		"name": "HOTSWAP__TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post message 1 - matteo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "465396cd-c64c-48cb-bf46-50680fbe97b1",
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"tests[\"200 OK\"] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"author\":\"matteo\",\n\t\"message\":\"hello!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9191/hotswap/sample",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"hotswap",
+						"sample"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post message 2 - matteo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "465396cd-c64c-48cb-bf46-50680fbe97b1",
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"tests[\"200 OK\"] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"author\":\"matteo\",\n\t\"message\":\"hello again!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9191/hotswap/sample",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"hotswap",
+						"sample"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post message 1 - paolo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "465396cd-c64c-48cb-bf46-50680fbe97b1",
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"tests[\"200 OK\"] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"author\":\"paolo\",\n\t\"message\":\"good morning\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9191/hotswap/sample",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"hotswap",
+						"sample"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all messages",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f6dad2d6-51b1-421c-b4b2-66d2ed79b683",
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"tests[\"200 OK\"] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"author\":\"matteo\",\n\t\"message\":\"hello!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9191/hotswap/sample",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"hotswap",
+						"sample"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count messages from author",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f6dad2d6-51b1-421c-b4b2-66d2ed79b683",
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"tests[\"200 OK\"] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"author\":\"matteo\",\n\t\"message\":\"hello!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9191/hotswap/sample/matteo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"hotswap",
+						"sample",
+						"matteo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

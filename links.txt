@@ -1,0 +1,39 @@
+
+---[ HotSwap - Sample ]---
+
+
+---[ Theory
+
+DONE
+[springloaded]
+https://github.com/joakim666/spring-boot-spring-loaded-java8-example
+[dcevm]
+http://hotswapagent.org/
+http://dcevm.github.io/
+
+IN PROGRESS
+-
+
+TODO
+-
+
+
+---[ Frameworks/Platforms
+
+-
+
+
+---[ Code
+
+-
+
+
+---[ Repo / Examples
+
+[springloaded]
+https://github.com/spring-projects/spring-loaded
+https://github.com/joakim666/spring-boot-spring-loaded-java8-example
+[dcevm]
+https://github.com/dcevm/dcevm
+https://github.com/HotswapProjects/HotswapAgent
+https://github.com/dmitry-zhuravlev/hotswap-agent-intellij-plugin
